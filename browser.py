@@ -1,3 +1,5 @@
 class Browser:
   def open_browser(self, url):
-    print 'hello'
+    import webbrowser
+    brow = webbrowser.get('firefox').open(url, new=1, autoraise=True)
+    #brow.open(url, new=1, autoraise=True)
